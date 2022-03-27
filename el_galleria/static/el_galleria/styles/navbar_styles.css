@@ -16,11 +16,24 @@
     flex-direction: row;
     align-items: center;
     font-family: lobster, regular;
+    padding: 1vh 1.5vw;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #e6e6e6;
 }
+
+.nav_home_container:hover{
+    cursor: pointer;
+}
+
+.el_nav_home{
+    margin: 0 0.25vw;
+}
+
 
 .search_field{
     border-style: solid;
-
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     border-width: 1px;
