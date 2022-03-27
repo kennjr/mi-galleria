@@ -14,7 +14,7 @@ div.scrollmenu a {
   color: #262626;
   text-align: center;
   padding: 1vh 1.25vw;/* vh */
-  margin: 0.25vh 0.5vw;
+  margin: 0.25vh 0.25vw;
   border-style: solid;
   border-radius: 50px;
   border-width: 1px;
@@ -23,5 +23,85 @@ div.scrollmenu a {
 }
 
 div.scrollmenu a:hover {
-  background-color: #777;
+  background-color: var(--accent-color);
+  border-color: #fff;
+}
+
+/* Styling for the phone */
+@media only screen and (max-width: 640px) {
+    /* Here are some changes*/
+    div.scrollmenu {
+        background-color: #fff;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 1vh 3vw; /* vh */
+    }
+
+    div.scrollmenu a {
+        display: inline-block;
+        color: #262626;
+        text-align: center;
+        padding: 1vh 2.25vw;/* vh */
+        margin: 0.25vh 0.25vw;
+        border-style: solid;
+        border-radius: 50px;
+        border-width: 1px;
+        border-color: #808080;
+        text-decoration: none;
+    }
+
+    div.scrollmenu a:hover {
+        background-color: var(--accent-color);
+        border-color: #fff;
+    }
+}
+
+/* Styling for the phone */
+@media only screen and (min-width: 641px) and (max-width: 880px) {
+    /* Here are some changes*/
+    div.scrollmenu {
+        background-color: #fff;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 1vh 3vw; /* vh */
+    }
+    div.scrollmenu a {
+        display: inline-block;
+        color: #262626;
+        text-align: center;
+        padding: 1vh 2vw;/* vh */
+        margin: 0.25vh 0.25vw;
+        border-style: solid;
+        border-radius: 50px;
+        border-width: 1px;
+        border-color: #808080;
+        text-decoration: none;
+    }
+
+    div.scrollmenu a:hover {
+        background-color: var(--accent-color);
+        border-color: #fff;
+    }
+}
+
+/* Styling for the phone */
+@media only screen and (min-width: 881px) and (max-width: 1200px) {
+    /* Here are some changes*/
+    div.scrollmenu a {
+        display: inline-block;
+        color: #262626;
+        text-align: center;
+        padding: 1vh 2vw;/* vh */
+        margin: 0.25vh 0.25vw;
+        border-style: solid;
+        border-radius: 50px;
+        border-width: 1px;
+        border-color: #808080;
+        text-decoration: none;
+    }
+
+    div.scrollmenu a:hover {
+        background-color: var(--accent-color);
+        border-color: #fff;
+    }
 }

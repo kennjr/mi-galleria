@@ -25,6 +25,7 @@
 
 .nav_home_container:hover{
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 .el_nav_home{
@@ -43,6 +44,7 @@
 
 .search_field:focus{
     outline: none;
+
 }
 
 .search_container{
@@ -58,10 +60,28 @@
     padding-bottom: 0.9vh;
     padding-left: 1vw;
     padding-right: 1.25vw;
-    background-color: rgba(204, 204, 204, 0.5);
+    background-color: rgba(204, 204, 204, 0.35);
 }
 
 .search_img:hover{
     cursor: pointer;
-    background-color: rgba(204, 204, 204, 0.9);
+    background-color: rgba(204, 204, 204, 0.75);
+}
+
+/* Styling for the phone */
+@media only screen and (max-width: 640px) {
+    /* Here are some changes*/
+
+}
+
+/* Styling for the phone */
+@media only screen and (min-width: 641px) and (max-width: 880px) {
+    /* Here are some changes*/
+
+}
+
+/* Styling for the phone */
+@media only screen and (min-width: 881px) and (max-width: 1200px) {
+    /* Here are some changes*/
+
 }

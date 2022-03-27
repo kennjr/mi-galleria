@@ -1,12 +1,21 @@
 .galleria_item_container{
     max-width: 100%;
     max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .3vh;
 }
 
-.galleria_item_container > img{
+.galleria_item_img_container{
+    width: 100%;
+    height: 100%;
+}
+
+.galleria_item_img_container > img{
     max-width: 100%;
     max-height: 100%;
-    border-radius: 2.5px;
+    border-radius: 2px;
+    object-fit: cover;
 }
 
 .galleria_item_info{
@@ -19,12 +28,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+
 }
 
 .galleria_item_opt_container > img{
     border-radius: 2.5px;
-    width: 7.5%;
-    height: 7.5%;
+    max-width: 100%;
+    max-height: 100%;
     padding: 0.5vh 0.45vw;
     background-color: rgba(204, 204, 204, 0.35);
 }
@@ -41,4 +52,28 @@
 .galleria_item_opt_container > img:hover{
     cursor: pointer;
     background-color: rgba(204, 204, 204, 0.75);
+}
+
+/* Styling for the phone */
+@media only screen and (max-width: 640px) {
+    /* Here are some changes*/
+    .galleria_item_opt_container > img{
+        border-radius: 2.5px;
+        max-width: 50%;
+        max-height: 50%;
+        padding: 0.5vh 0.45vw;
+        background-color: rgba(204, 204, 204, 0.35);
+    }
+}
+
+/* Styling for the phone */
+@media only screen and (min-width: 641px) and (max-width: 880px) {
+    /* Here are some changes*/
+
+}
+
+/* Styling for the phone */
+@media only screen and (min-width: 881px) and (max-width: 1200px) {
+    /* Here are some changes*/
+
 }
