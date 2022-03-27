@@ -1,0 +1,44 @@
+.galleria_item_container{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.galleria_item_container > img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2.5px;
+}
+
+.galleria_item_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.galleria_item_opt_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galleria_item_opt_container > img{
+    border-radius: 2.5px;
+    width: 7.5%;
+    height: 7.5%;
+    padding: 0.5vh 0.45vw;
+    background-color: rgba(204, 204, 204, 0.35);
+}
+
+.category_txt{
+    color: grey;
+    font-size: small;
+}
+
+.caption_txt{
+    font-size: medium;
+}
+
+.galleria_item_opt_container > img:hover{
+    cursor: pointer;
+    background-color: rgba(204, 204, 204, 0.75);
+}
