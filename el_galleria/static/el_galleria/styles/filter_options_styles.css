@@ -1,0 +1,27 @@
+*{
+    margin: 0 0;
+}
+
+div.scrollmenu {
+    background-color: #fff;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1vh 2vw; /* vh */
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: #262626;
+  text-align: center;
+  padding: 1vh 1.25vw;/* vh */
+  margin: 0.25vh 0.5vw;
+  border-style: solid;
+  border-radius: 50px;
+  border-width: 1px;
+  border-color: #808080;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
