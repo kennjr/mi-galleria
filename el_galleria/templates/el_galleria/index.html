@@ -9,16 +9,15 @@
     {% endif %}
 {% endblock %}
 {% block styling_links %}
+
+    <link rel="stylesheet" href="{% static 'el_galleria/styles/index_styles.css' %}">
     <link rel="stylesheet" href="{% static 'el_galleria/styles/navbar_styles.css' %}">
-    <link rel="stylesheet" href="{% static 'el_galleria/styles/index.css' %}">
 {% endblock %}
 {% block navbar %}
-    <h4>Available meetups in ur area</h4>
+    {% include 'el_galleria/includes/navbar.html' %}
 {% endblock %}
 
 {% block content %}
 
-    {% for meetup_item in meetups %}
-        {% include 'meet/includes/meetup_item.html' with meetup_item=meetup_item %}
-    {% endfor %}
+    <p>The index</p>
 {% endblock %}
