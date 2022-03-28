@@ -1,9 +1,11 @@
 <div class="galleria_item_container">
-    <img src="https://trumpwallpapers.com/wp-content/uploads/Cool-Laptop-Backgrounds-02-1920-x-1080.jpg" alt="Gallery img">
+    <div class="galleria_item_img_container">
+        <img class="galleria_item_img" src=/files/{{gallery_item.img_url}} alt="Gallery img" onclick="">
+    </div>
     <div class="galleria_item_info">
-        <p class="caption_txt">A very short caption for the image</p>
+        <p class="caption_txt">{{gallery_item.caption}}</p>
         <div class="galleria_item_opt_container">
-            <p class="category_txt">Travel</p>
+            <p class="category_txt">{{gallery_item.category.category_str}}</p>
             <img src="/static/el_galleria/images/ic_copy.svg" alt="copy image url">
         </div>
     </div>
