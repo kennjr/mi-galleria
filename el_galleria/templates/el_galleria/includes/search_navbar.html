@@ -1,0 +1,13 @@
+<div class="nav_container">
+    <div class="nav_home_container" onclick="window.location.href='{% url 'home' %}'">
+        <img class="el_nav_home home_icon" src="../../static/el_galleria/images/home_icon.svg" alt="Home">
+        <p class="el_nav_home">Mi Galleria</p>
+    </div>
+    <div class="search_container">
+        <form method="POST" action="{% url 'search' 'search_req' %}">
+            {% csrf_token %}
+            <input class="search_field" type="text" name="search_str" placeholder="Search...">
+            <img  class="search_img" src="../../static/el_galleria/images/ic_search.svg" alt="Search">
+        </form>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+@font-face {
+    font-family: lobster;
+    src: url('static/el_galleria/fonts/Lobster-Regular.ttf');
+}
+
+.nav_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vh 2vw;/* vh */
+    justify-content: space-between;
+}
+
+.nav_home_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: lobster, regular;
+    padding: 1vh 1.5vw;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #e6e6e6;
+}
+
+.nav_home_container:hover{
+    cursor: pointer;
+}
+
+.el_nav_home{
+    margin: 0 0.25vw;
+}
+
+.search_field{
+    width: 70%;
+    border-style: solid;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-width: 1px;
+    border-color: #808080;
+    padding: 1.8vh 1.5vw;
+}
+
+.search_field:focus{
+    outline: none;
+}
+
+.search_container{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search_container > form{
+    width: 70%;
+}
+
+.search_img{
+    display: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+    padding-left: 1vw;
+    padding-right: 1.25vw;
+    background-color: rgba(204, 204, 204, 0.35);
+}
+
+.search_img:hover{
+    cursor: pointer;
+    background-color: rgba(204, 204, 204, 0.75);
+}
+
+/* Styling for the phone */
+@media only screen and (max-width: 640px) {
+    /* Here are some changes*/
+
+}
+
+/* Styling for the phone */
+@media only screen and (min-width: 641px) and (max-width: 880px) {
+    /* Here are some changes*/
+
+}
+
+/* Styling for the phone */
+@media only screen and (min-width: 881px) and (max-width: 1200px) {
+    /* Here are some changes*/
+
+}
