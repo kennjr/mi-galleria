@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 2.5vh;
-    padding-bottom: 1.5vh;
+    padding-bottom: 5vh;
 }
 
 .results {
@@ -18,6 +18,12 @@
     grid-auto-rows: 1fr;
     width: 100%;
     margin: 0 auto;
+}
+
+.informative_txt{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
 }
 
 /* Styling for the phone */

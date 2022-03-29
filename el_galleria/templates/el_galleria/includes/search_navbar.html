@@ -4,7 +4,7 @@
         <p class="el_nav_home">Mi Galleria</p>
     </div>
     <div class="search_container">
-        <form method="POST" action="{% url 'search' 'search_req' %}">
+        <form method="POST" action="{% url url_to 'search_req' %}">
             {% csrf_token %}
             <input class="search_field" type="text" name="search_str" placeholder="Search...">
             <img  class="search_img" src="../../static/el_galleria/images/ic_search.svg" alt="Search">

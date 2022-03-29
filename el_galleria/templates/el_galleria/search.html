@@ -1,6 +1,7 @@
 {% extends 'el_galleria/base/base.html' %}
 {% load static %}
 
+
 {% block title %}
     {% if title %}
       {{title}}
@@ -13,25 +14,25 @@
     <link rel="stylesheet" href="{% static 'el_galleria/styles/filter_options_styles.css' %}">
     <link rel="stylesheet" href="{% static 'el_galleria/styles/search_navbar_styles.css' %}">
     <link rel="stylesheet" href="{% static 'el_galleria/styles/galleria_item_styles.css' %}">
-    <link rel="stylesheet" href="{% static 'el_galleria/styles/modal_styles.css' %}">
-    <script src="{% static 'el_galleria/scripts/index_scripts.js' %}"></script>
 {% endblock %}
 {% block navbar %}
-
-    {% include 'el_galleria/includes/search_navbar.html' with url_to='search' %}
-    {% include 'el_galleria/includes/filter_options.html' %}
+    <div class="search_tag_container">
+        {% include 'el_galleria/includes/search_navbar.html' with url_to='search' %}
+    </div>
 {% endblock %}
 
 {% block content %}
     <div class="index_container">
         <div class="results">
-            {% for gallery_item in gallery %}
-                {% include 'el_galleria/includes/galleria_item.html' with gallery_item=gallery_item %}
-            {% endfor %}
-
+            {% if results_len > 0 %}
+                {% for gallery_item in gallery %}
+                    {% include 'el_galleria/includes/galleria_item.html' with gallery_item=gallery_item %}
+                {% endfor %}
+            {% else %}
+                <div class="informative_txt">
+                    <p>No results found for your search</p>
+                </div>
+            {% endif %}
         </div>
-    </div>
-    <div class="modal">
-        {% include 'el_galleria/includes/img_modal.html' with img_url='galleria_imgs/work_1.jpg' %}
     </div>
 {% endblock %}

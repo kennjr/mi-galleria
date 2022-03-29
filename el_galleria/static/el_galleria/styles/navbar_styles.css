@@ -44,7 +44,9 @@
 
 .search_field:focus{
     outline: none;
-
+    transform-origin: right;
+    transform: scaleX(1.25);
+    transition-duration: 450ms;
 }
 
 .search_container{

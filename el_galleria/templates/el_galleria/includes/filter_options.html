@@ -1,10 +1,13 @@
  <div class="scrollmenu">
-  <a href="{% url 'category' 'all' %}">All</a>
-  <a href="{% url 'category' 'travel' %}">Travel</a>
-  <a href="{% url 'category' 'food' %}">Food</a>
-  <a href="{% url 'category' 'work' %}">Work</a>
-  <a href="{% url 'category' 'hobbies' %}">Hobbies</a>
-  <a href="{% url 'category' 'nature' %}">Nature</a>
-  <a href="{% url 'category' 'others' %}">Others</a>
+   {% for location in locations %}
+        <a href="{% url 'category' location.name %}">{{location.name}}</a>
+   {% endfor %}
+<!--  <a href="{% url 'home' %}">All</a>-->
+<!--  <a href="{% url 'category' 'travel' %}">Travel</a>-->
+<!--  <a href="{% url 'category' 'food' %}">Food</a>-->
+<!--  <a href="{% url 'category' 'work' %}">Work</a>-->
+<!--  <a href="{% url 'category' 'hobbies' %}">Hobbies</a>-->
+<!--  <a href="{% url 'category' 'nature' %}">Nature</a>-->
+<!--  <a href="{% url 'category' 'others' %}">Others</a>-->
 
 </div>

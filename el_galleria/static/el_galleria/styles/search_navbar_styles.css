@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 2vh 2vw;/* vh */
+    padding: 5vh 4vw;/* vh */
     justify-content: space-between;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .search_field{
-    width: 70%;
+    width: 80%;
     border-style: solid;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -55,7 +55,7 @@
 }
 
 .search_container > form{
-    width: 70%;
+    width: 80%;
 }
 
 .search_img{
@@ -77,7 +77,26 @@
 /* Styling for the phone */
 @media only screen and (max-width: 640px) {
     /* Here are some changes*/
+    .nav_container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 3vh 2vw;/* vh */
+        justify-content: space-between;
+    }
 
+    .nav_home_container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: lobster, regular;
+        padding: 1vh 1.5vw;
+        margin: 0 2vw;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #e6e6e6;
+    }
 }
 
 /* Styling for the phone */

@@ -1,12 +1,12 @@
 <div class="galleria_item_container">
     <div class="galleria_item_img_container">
-        <img class="galleria_item_img" src=/files/{{gallery_item.img_url}} alt="Gallery img" onclick="">
+        <img class="galleria_item_img" src=/files/{{gallery_item.img_url}} alt="Gallery img" onclick="open_modal('{{gallery_item.img_url}}', '{{gallery_item.description}}', '{{gallery_item.category.category_str}}', '{{gallery_item.caption}}', '{{gallery_item.location.name}}', '{{gallery_item.timestamp}}');">
     </div>
     <div class="galleria_item_info">
         <p class="caption_txt">{{gallery_item.caption}}</p>
         <div class="galleria_item_opt_container">
             <p class="category_txt">{{gallery_item.category.category_str}}</p>
-            <img src="/static/el_galleria/images/ic_copy.svg" alt="copy image url">
+            <img src="/static/el_galleria/images/ic_copy.svg" alt="copy image url" onclick="copyUrl('{{gallery_item.img_url}}');">
         </div>
     </div>
 </div>
