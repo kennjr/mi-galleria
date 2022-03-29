@@ -1,6 +1,6 @@
 function copyUrl(url){
     /* Copy the text inside the text field */
-    navigator.clipboard.writeText(url.toString());
+    navigator.clipboard.writeText(format_url(url));
     console.log("The text was copied " + url);
 }
 
@@ -32,5 +32,5 @@ window.onclick = function(event) {
 
 
 function format_url(url){
-    return
+    return "http://127.0.0.1:8000/files/" + url
 }
