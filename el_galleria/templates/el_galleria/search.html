@@ -10,10 +10,13 @@
     {% endif %}
 {% endblock %}
 {% block styling_links %}
+
     <link rel="stylesheet" href="{% static 'el_galleria/styles/index_styles.css' %}">
     <link rel="stylesheet" href="{% static 'el_galleria/styles/filter_options_styles.css' %}">
     <link rel="stylesheet" href="{% static 'el_galleria/styles/search_navbar_styles.css' %}">
     <link rel="stylesheet" href="{% static 'el_galleria/styles/galleria_item_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'el_galleria/styles/modal_styles.css' %}">
+    <script src="{% static 'el_galleria/scripts/index_scripts.js' %}"></script>
 {% endblock %}
 {% block navbar %}
     <div class="search_tag_container">
@@ -28,6 +31,10 @@
                 {% for gallery_item in gallery %}
                     {% include 'el_galleria/includes/galleria_item.html' with gallery_item=gallery_item %}
                 {% endfor %}
+
+                <div class="modal">
+                    {% include 'el_galleria/includes/img_modal.html' with img_url='galleria_imgs/work_1.jpg' %}
+                </div>
             {% else %}
                 <div class="informative_txt">
                     <p>No results found for your search</p>
